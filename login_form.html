@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html manifest="site.manifest">
+    <head>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="earth-folder.png">
+        <link rel="apple-touch-icon-precomposed" href="earth-folder.png">
+        <link rel="apple-touch-startup-image" href="earth-folder.png" />
+
+        <style type="text/css">
+#main{
+    width:900px;
+    margin:auto;
+}
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h1>create account</h1>
+            <p>please decode this: {{encoded}}</p>
+            <form action="/final_login" method="post" class="form-example">
+                <div class="form-example">
+                    <label for="decoded">Enter your decoded: </label>
+                    <input type="text" name="decoded" id="decoded" required>
+                </div>
+                <div class="form-example">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
