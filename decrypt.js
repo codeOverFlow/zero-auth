@@ -14,4 +14,4 @@ const decryptedData = crypto.privateDecrypt(
 
 // The decrypted data is of the Buffer type, which we can convert to a
 // string to reveal the original data
-console.log("decrypted data: ", decryptedData.toString());
+console.log("decrypted data: \"" + decryptedData.toString() + "\"");
