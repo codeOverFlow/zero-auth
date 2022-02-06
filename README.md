@@ -17,7 +17,7 @@ Finally the server compare the given string with the random generated string to 
 
 generate keys if you have not. (all default, no passphrase)
 ```
-$ ssh-keygen
+$ ssh-keygen -t rsa -m PEM
 ```
 
 install dependencies
